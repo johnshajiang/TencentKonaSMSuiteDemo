@@ -1,0 +1,29 @@
+[
+  {
+    "name": "com.tencent.kona.crypto.provider.SM2KeyPairGenerator",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.util.ECParameters",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.crypto.provider.SM2Signature",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  }
+]
