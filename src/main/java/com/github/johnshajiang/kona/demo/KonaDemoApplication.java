@@ -14,9 +14,11 @@ public class KonaDemoApplication {
 	}
 
 	public static void main(String[] args) throws Exception {
-		SM2CipherDemo.demo();
-		SM2SignatureDemo.demo();
+		SM2KeyPairGenDemo.genKeyPair();
 
 		SpringApplication.run(KonaDemoApplication.class, args);
+
+		SM2CipherDemo.demo();
+		SM2SignatureDemo.demo();
 	}
 }

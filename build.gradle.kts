@@ -10,15 +10,18 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+    }
 }
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
 
-    implementation("com.tencent.kona:kona-crypto:1.0.14")
-    implementation("com.tencent.kona:kona-pkix:1.0.14")
-    implementation("com.tencent.kona:kona-ssl:1.0.14")
-    implementation("com.tencent.kona:kona-provider:1.0.14")
+    implementation("com.tencent.kona:kona-crypto:1.0.15-SNAPSHOT")
+    implementation("com.tencent.kona:kona-pkix:1.0.15-SNAPSHOT")
+    implementation("com.tencent.kona:kona-ssl:1.0.15-SNAPSHOT")
+    implementation("com.tencent.kona:kona-provider:1.0.15-SNAPSHOT")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -26,4 +29,11 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+graalvmNative {
+    binaries.all {
+        buildArgs.add("--initialize-at-build-time=com.tencent.kona.crypto.CryptoUtils")
+//        buildArgs.add("-Dcom.tencent.kona.useNativeCrypto=true")
+    }
 }
