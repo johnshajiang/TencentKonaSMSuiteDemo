@@ -34,6 +34,6 @@ tasks.withType<Test> {
 graalvmNative {
     binaries.all {
         buildArgs.add("--initialize-at-build-time=com.tencent.kona.crypto.CryptoUtils")
-//        buildArgs.add("-Dcom.tencent.kona.useNativeCrypto=true")
+        buildArgs.add("-Dcom.tencent.kona.useNativeCrypto=true")
     }
 }

@@ -9,7 +9,7 @@
     ]
   },
   {
-    "name": "com.tencent.kona.sun.security.util.ECParameters",
+    "name": "com.tencent.kona.crypto.provider.SM2Signature",
     "methods": [
       {
         "name": "<init>",
@@ -18,7 +18,109 @@
     ]
   },
   {
-    "name": "com.tencent.kona.crypto.provider.SM2Signature",
+    "name": "com.tencent.kona.crypto.provider.SM3MessageDigest",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.crypto.provider.SM4Cipher",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+
+  {
+    "name": "com.tencent.kona.sun.security.x509.AuthorityKeyIdentifierExtension",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": ["java.lang.Boolean", "java.lang.Object"]
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.x509.BasicConstraintsExtension",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": ["java.lang.Boolean", "java.lang.Object"]
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.x509.ExtendedKeyUsageExtension",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": ["java.lang.Boolean", "java.lang.Object"]
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.x509.KeyUsageExtension",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": ["java.lang.Boolean", "java.lang.Object"]
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.x509.SubjectKeyIdentifierExtension",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": ["java.lang.Boolean", "java.lang.Object"]
+      }
+    ]
+  },
+
+  {
+    "name": "com.tencent.kona.sun.security.ssl.KeyManagerFactoryImpl$X509",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.ssl.TrustManagerFactoryImpl$PKIXFactory",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.ssl.SSLContextImpl$TLSContext",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.tencent.kona.sun.security.ssl.TLCPContextImpl$TLCPContext",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+
+  {
+    "name": "com.tencent.kona.sun.security.util.ECParameters",
     "methods": [
       {
         "name": "<init>",

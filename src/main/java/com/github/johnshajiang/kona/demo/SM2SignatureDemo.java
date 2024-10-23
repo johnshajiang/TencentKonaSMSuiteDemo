@@ -9,7 +9,7 @@ public class SM2SignatureDemo {
 
     private static final byte[] MESSAGE = "signature message".getBytes();
 
-    static void demo() throws Exception {
+    public static void demo() throws Exception {
         KeyPair keyPair = SM2KeyPairGenDemo.genKeyPair();
         PublicKey pubKey = keyPair.getPublic();
         PrivateKey priKey = keyPair.getPrivate();
@@ -28,7 +28,6 @@ public class SM2SignatureDemo {
         verifier.setParameter(paramSpec);
         verifier.initVerify(pubKey);
         verifier.update(MESSAGE);
-        boolean verified = verifier.verify(signature);
-        System.out.println("verified: " + verified);
+        assert verifier.verify(signature);
     }
 }

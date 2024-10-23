@@ -10,7 +10,7 @@ public class SM2CipherDemo {
 
     private static final byte[] MESSAGE = "cipher message".getBytes();
 
-    static void demo() throws Exception {
+    public static void demo() throws Exception {
         KeyPair keyPair = SM2KeyPairGenDemo.genKeyPair();
         PublicKey pubKey = keyPair.getPublic();
         PrivateKey priKey = keyPair.getPrivate();
@@ -23,6 +23,6 @@ public class SM2CipherDemo {
         cipher.init(Cipher.DECRYPT_MODE, priKey);
         byte[] cleartext = cipher.doFinal(ciphertext);
 
-        System.out.println("decrypted: " + Arrays.equals(MESSAGE, cleartext));
+        assert Arrays.equals(MESSAGE, cleartext);
     }
 }
