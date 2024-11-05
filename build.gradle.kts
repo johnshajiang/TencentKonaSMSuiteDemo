@@ -21,7 +21,6 @@ dependencies {
     implementation("com.tencent.kona:kona-crypto:1.0.15-SNAPSHOT")
     implementation("com.tencent.kona:kona-pkix:1.0.15-SNAPSHOT")
     implementation("com.tencent.kona:kona-ssl:1.0.15-SNAPSHOT")
-    implementation("com.tencent.kona:kona-provider:1.0.15-SNAPSHOT")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
